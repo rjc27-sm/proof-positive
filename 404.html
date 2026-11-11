@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proof Positive</title>
+<!-- Short address for Proof Positive. The site itself lives in the
+     style-manual-check repo; this page only forwards. 404.html is a copy of
+     this file, so /proof-positive/ask (or ask.html) lands on the Ask page. -->
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://rjc27-sm.github.io/style-manual-check/im2026/">
+<script>
+(function () {
+  var BASE = 'https://rjc27-sm.github.io/style-manual-check/im2026/';
+  var PAGES = { about: 'about', ask: 'ask', citations: 'citations', citation: 'citations',
+                lists: 'lists', list: 'lists', plain: 'plain', check: 'index', index: 'index' };
+  var rest = location.pathname.replace(/^\/proof-positive\/?/i, '')
+    .replace(/\/+$/, '').replace(/\.html$/i, '').toLowerCase();
+  var page = PAGES[rest];
+  var target = page && page !== 'index' ? page + '.html' : '';
+  location.replace(BASE + target + location.search + location.hash);
+})();
+</script>
+<meta http-equiv="refresh" content="1; url=https://rjc27-sm.github.io/style-manual-check/im2026/">
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; padding: 3rem 16px; font: 1.0625rem/1.5 system-ui, sans-serif;
+         background: #fff; color: #1a1a1a; }
+  a { color: #0b5cad; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #121212; color: #eee; }
+    a { color: #8cc4ff; }
+  }
+</style>
+</head>
+<body>
+<p>Taking you to Proof Positive…</p>
+<p><a href="https://rjc27-sm.github.io/style-manual-check/im2026/">Go to Proof Positive</a></p>
+</body>
+</html>
